@@ -1,0 +1,125 @@
+body{
+    background-color: #444444;
+    margin: 0;
+    outline: none;
+    scroll-behavior: unset;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#root{
+    display: flex;
+}
+.Mural{
+    flex-wrap: wrap;
+    display: flex;
+}
+.postIt{
+    font-family:cursive ;
+    background: transparent;
+    flex-wrap: wrap;
+    margin: 1.2rem;
+    padding: 0.6em;
+    width: 18.85em;
+    height: 18.85em;
+}
+.postIt .cabecalho{
+    display: flex;
+}
+.postIt input{
+    border: none;
+    border-radius: 1.5em;
+    background: rgba(29, 29, 28, 0.065);
+    font-family: cursive;
+    font-size: 1.2em;
+    font-weight: bolder;
+    display: inline;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 2px;
+    outline: none;
+    text-align: center;
+}
+.postIt .close{
+    font-size: 1.8em;
+    font-weight: bolder;
+    background-color: initial;
+    border: none;
+    border-radius: 0.5em;
+    margin: 0 5px;
+    height: 1.0em;
+    outline: none;
+}
+.postIt textarea{
+    background: transparent;
+    border: none;
+    font-family:cursive;
+    font-size: 1.3em;
+    resize: none;
+    width: 100%;
+    max-width: 97%;
+    height: 100%;
+    max-height: 75%;
+    outline: none;
+    scroll-behavior: unset;
+    overflow-y: scroll;
+}
+.postIt ::-webkit-scrollbar{
+    display: none;
+}
+.postIt .dataCriacao{
+    font-weight: bolder;
+    color: midnightblue;
+    margin: 0;
+    text-align: end;
+}
+.coresCard{
+    display: inline-flex;
+    float: left;
+    margin: 0;
+    
+}
+.coresCard button{
+    width: 3.2em;
+    height: 1.5em;
+    margin: 0 0.2em;
+    border-radius: 0.3em;
+    border-width: 0.02em;
+    border-color: lavender;
+    outline: none;
+}
+.coresCard .btn1{
+    background: aquamarine;
+}
+.coresCard .btn2{
+    background: tomato;
+
+}
+.coresCard .btn3{
+    background: violet;
+
+}
+.coresCard .btn4{
+    background: khaki;
+
+}
+@media (max-width: 800px){
+    .flex-container {flex-direction: column;}
+}
+.novoBotao{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    margin: 15px;
+    bottom: 1px;
+    right: 1px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 5.5em;
+    box-shadow: 5px 5px 20px 1px;
+}
+.novoBotao:hover {
+    background-color: rgb(198, 207, 219);
+}
