@@ -34,8 +34,9 @@ function Mural(props){
         postites.map( i => {
             if( i.id === index){
                 i.titulo = e.target.value;
+                return setPostites([...postites]);
             }
-            return setPostites([...postites]);
+            return postites;
         })
     }
 
@@ -43,8 +44,9 @@ function Mural(props){
         postites.map( i => {
             if( i.id === index){
                 i.nota = e.target.value;
+                return setPostites([...postites]);
             }
-            return setPostites([...postites]);
+            return postites;
         })
     }
 
